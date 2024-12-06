@@ -1303,7 +1303,7 @@ NSInteger pageStyle = 0;
 
     // Change the default value of some options
     NSArray *allKeys = [[[NSUserDefaults standardUserDefaults] dictionaryRepresentation] allKeys];
-    if (![allKeys containsObject:@"YTLPDidPerformFirstRunSetup"]) { 
+    /*if (![allKeys containsObject:@"YTLPDidPerformFirstRunSetup"]) { 
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"YTLPDidPerformFirstRunSetup"];
         // Set iSponsorBlock to default disabled
         NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
@@ -1324,5 +1324,5 @@ NSInteger pageStyle = 0;
         [[NSUserDefaults standardUserDefaults] setFloat:20.0 forKey:@"playerGesturesDeadzone"]; 
         [[NSUserDefaults standardUserDefaults] setFloat:1.0 forKey:@"playerGesturesSensitivity"]; 
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"playerGesturesHapticFeedback_enabled"]; 
-    }
+    }*/
 }
