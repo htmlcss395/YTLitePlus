@@ -1302,8 +1302,8 @@ NSInteger pageStyle = 0;
     }
 
     // Change the default value of some options
-    NSArray *allKeys = [[[NSUserDefaults standardUserDefaults] dictionaryRepresentation] allKeys];
-    /*if (![allKeys containsObject:@"YTLPDidPerformFirstRunSetup"]) { 
+    /*NSArray *allKeys = [[[NSUserDefaults standardUserDefaults] dictionaryRepresentation] allKeys];
+    if (![allKeys containsObject:@"YTLPDidPerformFirstRunSetup"]) { 
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"YTLPDidPerformFirstRunSetup"];
         // Set iSponsorBlock to default disabled
         NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
@@ -1316,7 +1316,7 @@ NSInteger pageStyle = 0;
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"YouPiPEnabled"]; 
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"newSettingsUI_enabled"]; 
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"fixCasting_enabled"]; 
-            // Default gestures as volume, brightness, seek
+        // Default gestures as volume, brightness, seek
         [[NSUserDefaults standardUserDefaults] setInteger:GestureModeVolume forKey:@"playerGestureTopSelection"]; 
         [[NSUserDefaults standardUserDefaults] setInteger:GestureModeBrightness forKey:@"playerGestureMiddleSelection"]; 
         [[NSUserDefaults standardUserDefaults] setInteger:GestureModeSeek forKey:@"playerGestureBottomSelection"]; 
