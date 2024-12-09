@@ -143,76 +143,10 @@ BOOL isSelf() {
     // Access YouTube Plus methods
     dlopen([[NSString stringWithFormat:@"%@/Frameworks/YTLite.dylib",           [[NSBundle mainBundle] bundlePath]] UTF8String], RTLD_LAZY);
 
-    if (IsEnabled(@"hideCastButton_enabled")) {
-        %init(gHideCastButton);
-    }
-    if (IsEnabled(@"iPadLayout_enabled")) {
-        %init(giPadLayout);
-    }
-    if (IsEnabled(@"iPhoneLayout_enabled")) {
-        %init(giPhoneLayout);
-    }
-    if (IsEnabled(@"bigYTMiniPlayer_enabled") && (UIDevice.currentDevice.userInterfaceIdiom != UIUserInterfaceIdiomPad)) {
-        %init(Main);
-    }
-    if (IsEnabled(@"hideVideoPlayerShadowOverlayButtons_enabled")) {
-        %init(gHideVideoPlayerShadowOverlayButtons);
-    }
-    if (IsEnabled(@"hideHeatwaves_enabled")) {
-        %init(gHideHeatwaves);
-    }
-    if (IsEnabled(@"ytNoModernUI_enabled")) {
-        %init(gYTNoModernUI);
-    }
-    if (IsEnabled(@"disableAccountSection_enabled")) {
-        %init(gDisableAccountSection);
-    }
-    if (IsEnabled(@"disableAutoplaySection_enabled")) {
-        %init(gDisableAutoplaySection);
-    }
-    if (IsEnabled(@"disableTryNewFeaturesSection_enabled")) {
-        %init(gDisableTryNewFeaturesSection);
-    }
-    if (IsEnabled(@"disableVideoQualityPreferencesSection_enabled")) {
-        %init(gDisableVideoQualityPreferencesSection);
-    }
-    if (IsEnabled(@"disableNotificationsSection_enabled")) {
-        %init(gDisableNotificationsSection);
-    }
-    if (IsEnabled(@"disableManageAllHistorySection_enabled")) {
-        %init(gDisableManageAllHistorySection);
-    }
-    if (IsEnabled(@"disableYourDataInYouTubeSection_enabled")) {
-        %init(gDisableYourDataInYouTubeSection);
-    }
-    if (IsEnabled(@"disablePrivacySection_enabled")) {
-        %init(gDisablePrivacySection);
-    }
-    if (IsEnabled(@"disableLiveChatSection_enabled")) {
-        %init(gDisableLiveChatSection);
-    }
-    if (IsEnabled(@"hideHomeTab_enabled")) {
-        %init(gHideHomeTab);
-    }
-    if (IsEnabled(@"fixCasting_enabled")) {
-        %init(gFixCasting);
-    }
-    if (IsEnabled(@"fullscreenToTheRight_enabled")) {
-        %init(gFullscreenToTheRight);
-    }
     if (IsEnabled(@"YTTapToSeek_enabled")) {
         %init(gYTTapToSeek);
     }
-    if (IsEnabled(@"disablePullToFull_enabled")) {
-        %init(gDisablePullToFull);
-    }
     if (IsEnabled(@"disableEngagementOverlay_enabled")) {
         %init(gDisableEngagementOverlay);
-    }
-    if (IsEnabled(@"playerGestures_enabled")) {
-        %init(gPlayerGestures);
-    }
-    if (IsEnabled(@"videoPlayerButton_enabled")) {
-        %init(gVideoPlayerButton);
     }
 }
